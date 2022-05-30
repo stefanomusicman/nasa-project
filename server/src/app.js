@@ -22,9 +22,9 @@ app.use(express.json()); // Checks for json info when a request comes in
 
 app.use(express.static(path.join(__dirname, '..', 'public'))); // Serves the React Code that was brought in from the client folder...now the public folder
 
-app.use(planetsRouter); // directs requests to the planets router
+app.use('/planets', planetsRouter); // directs requests to the planets router
 
-app.use(launchesRouter); // directs requests to the launches router
+app.use('/launches', launchesRouter); // directs requests to the launches router
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
