@@ -16,14 +16,16 @@ async function httpGetLaunches() {
   return data.sort((a, b) => a.flightNumber - b.flightNumber);
 }
 
+// TODO: Once API is ready.
+// Submit given launch data to launch system.
 async function httpSubmitLaunch(launch) {
-  // TODO: Once API is ready.
-  // Submit given launch data to launch system.
+
 }
 
+// TODO: Once API is ready.
+// Delete launch with given ID.
 async function httpAbortLaunch(id) {
-  // TODO: Once API is ready.
-  // Delete launch with given ID.
+  
 }
 
 export {

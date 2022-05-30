@@ -26,7 +26,7 @@ app.use(planetsRouter); // directs requests to the planets router
 
 app.use(launchesRouter); // directs requests to the launches router
 
-app.get('/', (res, req) => {
+app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 })
 
