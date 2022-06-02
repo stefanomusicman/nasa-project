@@ -1,0 +1,1 @@
+Application built with React.js + Node.js + Express.js to implement backend concepts
