@@ -8,7 +8,7 @@
     "install-client": "npm install --prefix client",
     "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
-    "client": "npm start --prefix client", 
+    "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/stefanomusicman/nasa-project/issues"
   },
-  "homepage": "https://github.com/stefanomusicman/nasa-project#readme"
+  "homepage": "https://github.com/stefanomusicman/nasa-project#readme",
+  "dependencies": {
+    "mongoose": "^6.4.3"
+  }
 }
