@@ -1,4 +1,7 @@
 // Example object of information for an upcoming launch
+
+// const launches = require('./launches.mongo');
+
 const launches = new Map();
 
 let latestFlightNumber = 100;
